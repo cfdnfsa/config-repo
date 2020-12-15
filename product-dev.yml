@@ -1,0 +1,18 @@
+spring:
+  # 数据库配置
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 118189447@wqaA
+    url: jdbc:mysql://8.131.64.81:3306/SpringCloud_Sell?characterEncoding=utf-8&useSSL=false
+    hikari:
+      max-lifetime: 5000000
+  jpa:
+    show-sql: true
+# 服务注册
+eureka:
+  client:
+    service-url:
+      defaultZone: http://8.131.64.81:8761/eureka/
+  instance:
+    prefer-ip-address: true
